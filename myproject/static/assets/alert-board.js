@@ -1,6 +1,6 @@
 var count = 1;
 
-function createAlert() {
+function createAlert(_handType, _speed, _img) {
     var newAlert = document.createElement('li');
     newAlert.classList.add('list-group-item', 'px-0', 'alert');
     newAlert.onclick = toggleAlert;
@@ -34,30 +34,30 @@ function createAlert() {
 
     var innerColImage = document.createElement('div');
     innerColImage.classList.add('col');
-    innerRow.appendChild(innerColImage);
+    innerColLeft.appendChild(innerColImage);
 
     var assultImage = document.createElement('img');
     assultImage.classList.add('assult-image');
-    assultImage.src = '../../static/assets/dog.jpeg';
+    assultImage.src = '../../static/assets/'+_img+'.png';
     assultImage.alt = 'test image';
     innerColImage.appendChild(assultImage);
 
     var innerColLeft = document.createElement('div');
     innerColLeft.classList.add('col');
-    innerRow.appendChild(innerColLeft);
+    innerColImage.appendChild(innerColLeft);
 
     var alertSpeed = document.createElement('h5');
     alertSpeed.classList.add('mb-0');
-    alertSpeed.innerText = '속도: 73 m/s';
+    alertSpeed.innerText = '속도: '+_speed;
     innerColLeft.appendChild(alertSpeed);
 
     var innerColRight = document.createElement('div');
     innerColRight.classList.add('col-auto');
-    innerRow.appendChild(innerColRight);
+    innerColImage.appendChild(innerColRight);
 
     var alertHand = document.createElement('h5');
     alertHand.classList.add('mb-0');
-    alertHand.innerText = '타격: 오른손';
+    alertHand.innerText = '타격: '+_handType;
     innerColRight.appendChild(alertHand);
 
     changeColor('rgba(252, 120, 108, 0.5)');
@@ -100,7 +100,12 @@ function changeColor(targetColor){
 }
 
 window.onload = function(){
-    setTimeout(() => createAlert(), 2000);
-    setTimeout(() => createAlert(), 4000);
-    setTimeout(() => createAlert(), 10000);
+    setTimeout(() => createAlert("왼손", 60, 19), 20990);
+    setTimeout(() => createAlert("오른손", 67, 25), 26990);
+    setTimeout(() => createAlert("왼손", 64, 65), 66990);
+    setTimeout(() => createAlert("오른손", 66, 73), 74990);
+    setTimeout(() => createAlert("왼손", 68, 113), 114990);
+    setTimeout(() => createAlert("오른손", 59, 122), 123990);
+    setTimeout(() => createAlert("왼손", 70,159), 159990);
+    setTimeout(() => createAlert("오른손", 61,167), 167990);
  }
