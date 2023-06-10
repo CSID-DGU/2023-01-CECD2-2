@@ -1,4 +1,5 @@
 var count = 1;
+var alerts = []
 
 function createAlert(_handType, _speed, _img) {
     var newAlert = document.createElement('li');
@@ -63,6 +64,12 @@ function createAlert(_handType, _speed, _img) {
     changeColor('rgba(252, 120, 108, 0.5)');
     document.getElementById('alert-list').appendChild(newAlert);
     setTimeout(() => changeColor('#ffffff'), 1000);
+
+    alerts.push({
+        timestamp: new Date(),
+        element: newAlert
+    });
+    console.log("push: " + newAlert);
 }
 
 function toggleAlert() {
@@ -109,3 +116,50 @@ window.onload = function(){
     setTimeout(() => createAlert("왼손", 70,159), 159990);
     setTimeout(() => createAlert("오른손", 61,167), 167990);
  }
+
+
+// Get inputs
+var startDateInput = document.querySelector('#start-date');
+var startTimeInput = document.querySelector('#start-time');
+var endDateInput = document.querySelector('#end-date');
+var endTimeInput = document.querySelector('#end-time');
+
+// Create event listeners
+startDateInput.addEventListener('change', updateHistory);
+startTimeInput.addEventListener('change', updateHistory);
+endDateInput.addEventListener('change', updateHistory);
+endTimeInput.addEventListener('change', updateHistory);
+console.log("Event listeners attached");
+
+function updateHistory() {
+    console.log("updateHistory called");
+    console.log(startDateInput.value);
+    console.log(startTimeInput.value);
+    console.log(endDateInput.value);
+    console.log(endTimeInput.value);
+    if (startDateInput.value && startTimeInput.value && endDateInput.value && endTimeInput.value) {
+        var startDateTime = new Date(startDateInput.value + 'T' + startTimeInput.value);
+        var endDateTime = new Date(endDateInput.value + 'T' + endTimeInput.value);
+        console.log("startDateTime: " + startDateTime);
+        console.log("endDateTime: " + endDateTime);
+       
+    }
+    displayAlerts(startDateTime, endDateTime);
+}
+
+function displayAlerts(startDateTime, endDateTime) {
+
+    var alertList = document.getElementById('alert-list');
+    while (alertList.firstChild) {
+        alertList.removeChild(alertList.firstChild);
+    }
+
+    alerts.forEach(function(alert) {
+        if (alert.timestamp >= startDateTime && alert.timestamp <= endDateTime) {
+            alertList.appendChild(alert.element); 
+            console.log("appendChild: " + alert.element);
+        } else{
+            console.log("not: " + alert.element);
+        }
+    });
+}
