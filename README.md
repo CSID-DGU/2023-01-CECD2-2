@@ -2,14 +2,15 @@
 2022-2 ~ 2023-1 컴퓨터공학종합설계 팀 허튼소리
 
 ## 🎥프로젝트 소개
-![슬라이드1](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/659228ca-de15-4bd3-800e-2f1c9e53f272)
-![슬라이드9](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/5369930f-eec6-4d12-8cd9-f9ca974b7470)
-![슬라이드12](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/9d1a9461-4b39-4429-b263-8e79d1f75c01)
-![슬라이드15](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/f5602530-c1ff-48ee-b8d5-c2978f6ea5e8)
-![슬라이드21](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/be656d4a-3c05-44b8-9798-704d821e63a5)
-![슬라이드23](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/2a62b7be-8c94-4f6c-a7fa-a6fbc77e9941)
-![슬라이드24](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/c7541d72-1f3e-4906-ae1d-83018e56b012)
-![슬라이드26](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/234c4b88-8326-4c4a-9f09-27abf6ae9813)
+![슬라이드1](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/ab4a5330-a981-4fcd-a94f-5ae3146ab59e)
+![슬라이드9](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/8033b0f1-1d98-4521-b17a-da3f8ee16d32)
+![슬라이드12](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/1375c0af-f8d1-45cb-b0a9-d4acec5859e1)
+![슬라이드15](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/e286349b-9bc9-4e14-a1a4-03b488012448)
+![슬라이드21](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/ae8925f0-f44b-4a58-8041-34750deb8d03)
+![슬라이드23](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/a032bd79-7987-45b1-a626-7bcc086a9b09)
+![슬라이드24](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/f6bb5f9e-5d97-4438-ab33-0ee8a1dd64da)
+![슬라이드26](https://github.com/HTSRcapstone/AssaultAlertPlatform/assets/95969941/ea03b3ac-b48c-4ed6-b46b-3ff842c318d5)
+
 
 ## 👨‍👩‍👧‍👧팀원 소개
 | 학과       | 학번 | 팀원이름 | 연락처 |
